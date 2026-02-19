@@ -1,6 +1,7 @@
 const texts = [
     "TJA UNiVERSAL",
     "karameru"
+    // 協力してくれた方はここに名前を追加しておいてください！
 ];
 
 const charDelay = 0.07;
