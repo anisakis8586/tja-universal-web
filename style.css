@@ -1,0 +1,64 @@
+:root {
+    --stroke: #000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(90deg,
+            #ffb6c1,
+            #fff3b0,
+            #c1ffd7,
+            #8fffff);
+    font-family: Impact, "Arial Black", sans-serif;
+    overflow: hidden;
+}
+
+/* ===== でかい文字 ===== */
+.title {
+    position: absolute;
+    bottom: -3.2vw;
+    left: 0;
+    padding-left: 2vw;
+    font-size: 12vw;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--stroke);
+}
+
+/* ===== 文字アニメーション ===== */
+.char {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: revealHide var(--duration) cubic-bezier(.2, .8, .2, 1) forwards;
+}
+
+@keyframes revealHide {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+}
