@@ -1,28 +1,101 @@
 ﻿<!DOCTYPE html>
 <html lang="ja">
-
 <head>
-    <title>TJA Universal Official Website</title>
-  
-  <meta name="description" content="TJA Universalの公式Webサイトです。" />
-  <meta property="og:title" content="TJA Universal Official Website" />
-  <meta property="og:description" content="TJA Universalの公式Webサイトです。" />
-    <meta property="og:url" content="https://tja-universal-web.netlify.app/" />
-  <meta property="og:image" content="https://tja-universal-web.netlify.app/TJA%20Universal%20bgimage%20%5BWeb%20site%5D.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TJA Universal Official Website</title>
+
+  <meta name="theme-color" content="#fff3b0">
+  <meta name="description" content="創作譜面制作・管理支援ツールのTJA Universal公式サイトです">
+
+  <link rel="icon" href="./assets/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <meta property="og:title" content="TJA Universal">
+  <meta property="og:description" content="創作譜面制作・管理支援ツールのTJA Universal公式サイトです">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://tja-universal-web.netlify.app/assets/TJA%20Universal%20bgimage%20%5BWeb%20site%5D.png" />
+  <meta property="og:type" content="website">
+
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="TJA Universal Official Website" />
-  <meta name="twitter:description" content="TJA Universalの公式Webサイトです。" />
-  <meta name="twitter:image" content="https://tja-universal-web.netlify.app/TJA%20Universal%20bgimage%20%5BWeb%20site%5D.png" />
+  <meta name="twitter:description" content="TJA Universal公式サイトです" />
+  <meta name="twitter:image" content="https://tja-universal-web.netlify.app/assets/TJA%20Universal%20bgimage%20%5BWeb%20site%5D.png" />
 
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <div class="title" id="bottom"></div>
+  <header>
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="./assets/icon.png" alt="TJA Universal アイコン" class="project-icon">
+        <!--プロジェクト名 + 開発者のアニメーションはここに移動させてます-->
+        <div id="header-anim" class="logo-anim"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">概要</a></li>
+          <li><a href="#">DL</a></li>
+          <li>
+            <a href="https://tjauniversal-tos.netlify.app/" target="_blank" rel="noopener noreferrer">
+              利用規約
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main>
+    <h1 class="hero-title">TJA Universal</h1>
+
+    <div class="slider-outer">
+      <button class="nav-btn prev" id="prevBtn" aria-label="前へ">&lt;</button>
+      
+      <div class="slider-container" id="slider-container">
+        <!--ここにスライダーが生成される-->
+        <div class="slider-wrapper" id="slider-wrapper"></div>
+      </div>
+
+      <button class="nav-btn next" id="nextBtn" aria-label="次へ">&gt;</button>
+    </div>
+
+    <div class="slider-dots" id="slider-dots"></div>
+
+    <section class="description-container">
+      <p id="description-text">Loading...</p>
+    </section>
+
+    <section class="button-container">
+      <a href="https://example.com"
+         class="btn blue-btn"
+         target="_blank"
+         rel="noopener noreferrer">
+         web版リンク
+      </a>
+
+      <a href="#"
+         class="btn blue-btn disabled">
+         ソフト版DLリンク(準備中)
+      </a>
+
+      <a href="https://discord.gg/4UXNzrdQFq"
+         class="btn blue-btn"
+         target="_blank"
+         rel="noopener noreferrer">
+         公式Discord
+      </a>
+    </section>
+  </main>
+    
+  <footer class="site-footer">
+    <p id="copyright"></p>
+  </footer>
+    
   <script src="main.js" defer></script>
 </body>
+</html>
 
 </html>
 
